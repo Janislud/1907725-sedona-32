@@ -26,7 +26,7 @@ body {
   font-weight: bold;
   text-align: center;
   color: #FFFFFF;
-  background-color: #756257;
+  background-color: #83B3D3;
   border-radius: 10px;
   text-decoration: none;
   text-transform: uppercase;
@@ -100,5 +100,11 @@ body {
   font-weight: 700;
   color: #000000;
   background: #FFFFFF;
-  background-repeat: repeat;
 }
+.advantage-preview {
+  background: #83B3D3;
+}
+.infrastructure {
+  :background: url(../index-background.jpg);
+
+
