@@ -12,14 +12,22 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+html {
+  height: 100%;
+}
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
   background-color: #E5E5E5;
 }
+
 .button {
   font-size: 20px;
   line-height: 36px;
@@ -36,6 +44,27 @@ body {
   color: #000000;;
   background: #FFFFFF;
 }
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+.navigation-list {
+  width: 430px;
+  margin: 0;
+  padding: 0;
+
+}
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 
 .navigation-link {
   font-family: "PT Sans Narrow", sans-serif;
@@ -48,6 +77,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
+
+
 .main-index {
   color: #000000;
   background-color: #E5E5E5;
@@ -56,8 +87,28 @@ body {
 }
 
 .advantages-list {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  text-align: center
 }
+
+.advantages-item {
+  display: flex;
+  width: 1200px;
+}
+
+.contacts {
+  width: 350px;
+  font-weight: 700;
+
+}
+
+
+.navigation-user {
+  max-width: 250px;
+  margin-left: auto;
+}
+
 .advantages-title {
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
@@ -86,6 +137,13 @@ body {
   font-weight: normal;
 }
 
+inner-header-title {
+
+  width: 220px;
+  margin-right: 20px;
+
+}
+
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
@@ -101,10 +159,33 @@ body {
   color: #000000;
   background: #FFFFFF;
 }
+.product-card {
+  display: flex;
+
+
+}
+.page-footer-container {
+  display: flex;
+  width: 720px;
+  margin: 0 auto;
+}
+.footer-social {
+  margin-left: auto;
+  max-width: 190px;
+}
+
+
+footer-social-list {
+  display: flex;
+  width: 720px;
+  margin: 0 auto;
+}
+
 .advantage-preview {
   background: #83B3D3;
 }
 .infrastructure {
   :background: url(../index-background.jpg);
+
 
 
