@@ -26,30 +26,25 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #E5E5E5;
-
+  width: 1200px;
+  height: 120px;
 
 }
 
 .main-inner {
-  padding-top: 40px;
+  padding-top: 134px;
   color: #242424;
   background-color: #FBF7F4;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
-
-
+  display: flex;
+  width: 1056px;
+  height: 840px;
+  padding-left: 112px;
+  padding-right: 30px;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
 
 .button {
   font-size: 20px;
@@ -127,7 +122,7 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  text-align: center
+  text-align: center;
   list-style-type: none;
 
 
@@ -159,12 +154,12 @@ body {
 }
 
 .main-container {
-  flex-grow: 1;
-  padding-bottom: 57px;
+  list-style-type: none;
+  padding-bottom: 60px;
 }
 
 .advantages-title {
-  margin-top: 184;
+  margin-top: 184px;
   margin-bottom: 172px;
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
@@ -189,12 +184,12 @@ body {
 
 }
 
-
-
 .services-list {
   font-size: 22px;
   line-height: 26px;
   font-weight: normal;
+  list-style-type: none;
+
 }
 
 .inner-header-title {
@@ -207,68 +202,40 @@ body {
   text-transform: uppercase;
 }
 
-
-.contacts-phone {
-  font-size: 40px;
-  line-height: 40px;
-  text-transform: uppercase;
-  color: #000000;
-  background: #FFFFFF;
-  text-align: center;
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
 }
-
-.page-footer {
-  font-size: 14px;
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 50px;
+  height: 44px;
+  padding: 14px 20px;
+  line-height: 16px;
   font-weight: 700;
-  color: #000000;
-  background: #FFFFFF;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  text-decoration: none;
 }
+
+
+
 .product-card {
-  display: flex;
 
-
-}
-.page-footer-container {
   display: flex;
-  width: 720px;
-  margin: 0 auto;
-  padding: 40px 40px;
-}
-.footer-social {
-  margin-left: auto;
-  max-width: 190px;
+  width: 1056px;
 }
 
-
-.footer-social-list {
-  display: flex;
-  width: 720px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
+.advantage-previews {
+  list-style-type: none;
 }
 
 .advantage-preview {
   background: #83B3D3;
+  list-style-type: none;
+  text-align: center;
 }
-.infrastructure {
-  :background: url(../index-background.jpg);
-
-.page-footer-title {
-  margin-top: 0;
-  margin-bottom: 14px;
-  font-family: "PT Sans Narrow", sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 700;
-  color: #FFFFFF;
-  text-transform: uppercase;
-}
-
-.footer-social-item {
-  width: 56px;
-  height: 44px;
-  margin-right: 8px;
+.infrastructure {: background: url(../index-background.jpg);
 }
 
 .pagination {
@@ -276,7 +243,111 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  width: 1200px;
 }
 
+.page-footer {
+  font-size: 40px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  height: 120px;
+  margin: 0 auto;
+  padding: 40px 30px;
+}
+
+.footer-contact {
+  width: 120px;
+  margin-right: 240px;
+  text-transform: uppercase;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  width: 19px;
+  height: 15px;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+}
+.about-text {
+  width: 115px;
+  height: 34px;
+  padding-top: 42px;
+  padding-left: 600px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.product-card-button {
+  display: inline-block;
+  align-items: center;
+  padding-left: -15px;
+  width: 152px;
+padding-top: 5px;
+  padding-right: -155px;
+  margin: 30px;
+  text-align: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.contacts-phone {
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;
+  color: black;
+  line-height: 40px;
+}
+
+.product-card-title {
+  width: 211px;
+  height: 31px;
+  font-size: 24px;
+  vertical-align: top;
+  color: #000000;
+  font-weight: 700;
+}
+
+.popular {
+  width: 56px;
+  height: 44px;
+  padding-left: 340px;
+}
+
+.product-card-price {
+  padding-left: 120px;
+  text-align: left;
 
 
+}
