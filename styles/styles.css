@@ -25,23 +25,17 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #E5E5E5;
-  width: 1200px;
-  height: 120px;
+  background-color: #F2F2F2;
 
 }
 
 .main-inner {
-  padding-top: 134px;
   color: #242424;
   background-color: #FBF7F4;
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
   display: flex;
-  width: 1056px;
-  height: 840px;
-  padding-left: 112px;
-  padding-right: 30px;
+
 }
 
 
@@ -352,4 +346,13 @@ padding-top: 5px;
 
 .sorting {
 
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.promo-block {
+  background-image: url(../img/index-background.jpg);
 }
