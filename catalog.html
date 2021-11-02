@@ -8,8 +8,8 @@
 </head>
 
 <body>
-<div class="container">
   <header class="page-container">
+    <img class="logo-header" src="img/sedona-1.svg" width="138" height="70" alt="Logo SeDona »">
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -43,7 +43,8 @@
       </div>
     </div>
   </header>
-
+<section class="infrastructure-main">
+  <div>
   <h1 class="inner-header-title">Гостиницы Седоны</h1>
   <ul class="breadcrumbs">
     <li class="breadcrumbs-item">
@@ -53,9 +54,7 @@
       <a class="breadcrumbs-link">Гостиницы</a>
     </li>
   </ul>
-
-
-
+  </div>
 <form>
   <fieldset class="infrastructure">
     <legend>Инфраструктура:</legend>
@@ -109,7 +108,8 @@
     </div>
   </fieldset>
 </form>
-<main class="page-container">
+</section>
+<main class="page-container main-container">
   <div class="sorting-type">
     <label class="visually-hidden" for="sorting">Найдено гостиниц: 38</label>
     <select class="select-control" id="sorting" name="sorting">
@@ -128,10 +128,11 @@
       <a class="product-card-link" href="#">
         <img class="product-card-image" src="img/hotel-1.jpg" width="180" height="120" alt="">
       </a>
-      <h3 class="product-card-title">Amara Resort & Spa</h3>
-      <b class="product-card-price">От 4000 ₽</b>
-      <a href="#" class="product-card-button button">Подробнее</a>
-      <a href="#" class="product-card-button button">В избранное</a>
+      <div class="product-card-title">Amara Resort & Spa</div>
+      <div class="product-card-price">От 4000 ₽</div>
+      <div href="#" class="product-card-button button">Подробнее</div>
+      <div href="#" class="product-card-button button">В избранное</div>
+      <div>stars</div>
       <div>Рейтинг: 8,5</div>
     </div>
   <div class="product-card">
@@ -142,6 +143,7 @@
     <b class="product-card-price">От 2000 ₽</b>
     <a href="#" class="product-card-button button">Подробнее</a>
     <a href="#" class="product-card-button button">В избранное</a>
+    <div>stars</div>
     <div>Рейтинг: 8,9</div>
   </div>
   <div class="product-card">
@@ -152,6 +154,7 @@
     <b class="product-card-price">От 2000 ₽</b>
     <a href="#" class="product-card-button button">Подробнее</a>
     <a href="#" class="product-card-button button">В избранное</a>
+    <div>stars</div>
     <div>Рейтинг: 9,2</div>
   </div>
   <div class="product-card">
@@ -162,6 +165,7 @@
     <b class="product-card-price">От 3000 ₽</b>
     <a href="#" class="product-card-button button">Подробнее</a>
     <a href="#" class="product-card-button button">В избранное</a>
+    <div>stars</div>
     <div>Рейтинг: 9,2</div>
   </div>
   <button class="btn btn--transparent" type="button">Загрузить еще</button>
@@ -196,8 +200,6 @@
     </li>
   </ul>
   <button class="button pagination-show-more" type="button">Показать ещё</button>
-</main>
-
   <section class="search">
     <h2 class="search-title">Заинтересовались?
     </h2>
@@ -220,6 +222,8 @@
       </button>
     </form>
   </section>
+</main>
+
 
 
   <footer class="page-footer">
