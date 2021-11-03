@@ -26,8 +26,7 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #F2F2F2;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
+
 
 }
 
@@ -149,16 +148,17 @@ body {
 }
 
 .advantages-title {
-  margin-top: 184px;
+  display: block;
   margin-bottom: 172px;
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .feature-preview {
-  display: flex;
+  display: block;
   color: #FFFFFF;
   background-color: #83B3D3;
 }
@@ -214,7 +214,17 @@ body {
 .product-card {
 
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 1056px;
+  margin: 0;
+  padding: 0;
+  flex-direction:;
+}
+
+.product-card-image {
+  margin-bottom: 30px;
+  width: 180px;
 }
 
 .advantage-previews {
@@ -225,6 +235,7 @@ body {
   background: #83B3D3;
   list-style-type: none;
   text-align: center;
+
 }
 .infrastructure {: background: url(../index-background.jpg);
 }
@@ -250,12 +261,14 @@ body {
   height: 120px;
   margin: 0 auto;
   padding: 40px 30px;
+
 }
 
 .footer-contact {
   width: 120px;
   margin-right: 240px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .footer-social-list {
@@ -346,6 +359,9 @@ padding-top: 5px;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   width: 1200px;
   margin: 0 auto;
 }
@@ -358,4 +374,41 @@ padding-top: 5px;
   position: absolute;
   padding-left: 531px;
   padding-right: 531px;
+}
+
+
+.product-card-1 {
+  display: flex;
+}
+
+
+.image-main {
+  display: block;
+
+}
+
+.search {
+  display: grid;
+  text-align:center;
+}
+
+.search-title {
+
+
+}
+
+
+.search-name {
+
+
+}
+
+.search-button {
+
+
+}
+
+.subscribe {
+  display: grid;
+  text-align:center;
 }
