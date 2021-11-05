@@ -91,7 +91,6 @@
         <label for="apartments">Апартаменты</label>
       </li>
     </ul>
-  </fieldset>
   <fieldset class="filter-form__col">
     <legend>Стоимость, ₽:</legend>
     <div class="range"></div>
@@ -110,11 +109,12 @@
       <button class="btn btn--transparent" type="reset">Сбросить</button>
     </div>
   </fieldset>
+  </fieldset>
 </form>
 </section>
 <main class="page-container main-container">
   <div class="sorting-type">
-    <label class="visually-hidden" for="sorting">Найдено гостиниц: 38</label>
+    <label class="" for="sorting">Найдено гостиниц: 38</label>
     <select class="select-control" id="sorting" name="sorting">
       <option value="popular">Сначала дешевые</option>
       <option value="cheap">Сначала дешёвое</option>
@@ -133,8 +133,8 @@
       </a>
       <div class="product-card-title">Amara Resort & Spa</div>
       <div class="product-card-price">От 4000 ₽</div>
-      <div href="#" class="product-card-button button">Подробнее</div>
-      <div href="#" class="product-card-button button">В избранное</div>
+      <a href="#" class="product-card-button button">Подробнее</a>
+      <a href="#" class="product-card-button button">В избранное</a>
       <div>stars</div>
       <div>Рейтинг: 8,5</div>
     </div>
@@ -172,44 +172,46 @@
     <div>Рейтинг: 9,2</div>
   </div>
   <button class="btn btn--transparent" type="button">Загрузить еще</button>
-  <ul class="pagination">
-    <li>
-    <a class="pagination-link pagination-prev pagination-disabled">
-      <span class="visually-hidden">Предыдущая страница</span>
-    </a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link pagination-current">1</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link" href="#">2</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link" href="#">3</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link" href="#">4</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link" href="#">...</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link" href="#">10</a>
-    </li>
-    <li class="pagination-item">
-      <a class="pagination-link pagination-next" href="#">
-        <span class="visually-hidden">Следующая страница</span>
-      </a>
-    </li>
-  </ul>
-  <button class="button pagination-show-more" type="button">Показать ещё</button>
-  <section class="search">
-    <h2 class="search-title">Заинтересовались?
-    </h2>
-    <p class="search-name">Укажите предполагаемые даты поездки,
-      и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-    <a class="search-button" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
-  </section>
+
+
+
+
+
+  <div class="pagination-container">
+    <ul class="pagination">
+      <li class="pagination-item">
+        <a class="visually-hidden pagination-link pagination-prev pagination-disabled">
+          <span class="visually-hidden">Предыдущая страница</span>
+        </a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link pagination-current">1</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">2</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">3</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">4</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">...</a>
+      </li>
+      <li class="pagination-item">
+        <a class="pagination-link" href="#">10</a>
+      </li>
+      <li class="pagination-item">
+        <a class=" visually-hidden pagination-link pagination-next" href="#">
+          <span class="visually-hidden">Следующая страница</span>
+        </a>
+      </li>
+    </ul>
+    <span class="pagination-show-more">Гостиниц на странице:</span>
+    <span class="pagination-show-more">4:</span>
+  </div>
+
   <section class="subscribe">
     <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
     <p class="subscribe-name">Только полезная информация и никакого спама,
@@ -226,8 +228,6 @@
     </form>
   </section>
 </main>
-
-
 
   <footer class="page-footer">
     <div class="footer-contact">
