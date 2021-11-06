@@ -99,11 +99,36 @@ body {
 }
 
 .advantages-item {
-  width: 250px;
 
-}
-.advantage-description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
   list-style-type: none;
+  width: 1200px;
+  height: 400px;
+}
+
+.advantage-description {
+
+
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 1200px;
+  height: 400px;
 
 
 }
@@ -119,12 +144,25 @@ body {
 
 }
 
-.advantages-item {
-  display: block;
-  width: 1200px;
-  text-align: center;
-  text-transform: uppercase;
+.advantages-title {
+  width: 400px;
+  padding-top: 184px;
+  padding-bottom: 172px;
+  line-height: 28px;
+  font-weight: 700;
 }
+
+p {
+  display: flex;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  padding-left: 75px;
+  padding-right:75px;
+  font-weight: 400;
+
+}
+
 
 .contacts {
   width: 350px;
@@ -147,21 +185,27 @@ body {
   flex-grow: 1;
 }
 
-.advantages-title {
-  display: block;
-  margin-bottom: 172px;
-  font-family: "PT Sans", sans-serif;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 .feature-preview {
-  display: block;
+  display: grid;
+  grid-template-columns: 400px 74px 384px;
   color: #FFFFFF;
   background-color: #83B3D3;
+  height: 400px;
+  width: 1200px;
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
 .services {
   text-transform: uppercase;
 }
@@ -193,36 +237,33 @@ body {
   text-transform: uppercase;
 }
 
-.product-card {
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 1056px;
-  margin: 0;
-  padding: 0;
-
-}
-
-.product-card-image {
-  margin-bottom: 30px;
-  width: 180px;
-}
 
 .advantage-previews {
   list-style-type: none;
+
 }
 
 .advantage-preview {
   background: #83B3D3;
   list-style-type: none;
   text-align: center;
-
+  display: grid;
+  grid-template-columns: 800px 84px 400px;
+  color: #FFFFFF;
+  height: 400px;
+  width: 1200px;
 }
+
 .infrastructure {: background: url(../index-background.jpg);
   display: flex;
+  list-style-type: none;
 }
+.checkbox {
 
+  list-style-type: none;
+
+}
 .filter-form__col {
   display: flex;
 
@@ -230,6 +271,9 @@ body {
 
 
 .page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  text-align:center;
   font-size: 40px;
   font-weight: 400;
   color: #000000;
@@ -242,6 +286,7 @@ body {
   height: 120px;
   margin: 0 auto;
   padding: 40px 30px;
+
 
 }
 
@@ -271,29 +316,7 @@ body {
 
 }
 .about-text {
-  width: 115px;
-  height: 34px;
-  padding-top: 42px;
-  padding-left: 600px;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
-.product-card-button {
-  display: inline-block;
-  align-items: center;
-  padding-left: -15px;
-  width: 152px;
-padding-top: 5px;
-  padding-right: -155px;
-  margin: 30px;
-  text-align: center;
 }
 
 .visually-hidden {
@@ -315,24 +338,11 @@ padding-top: 5px;
   line-height: 40px;
 }
 
-.product-card-title {
-  width: 211px;
-  height: 31px;
-  font-size: 24px;
-  vertical-align: top;
-  color: #000000;
-  font-weight: 700;
-}
 
 .popular {
   width: 56px;
   height: 44px;
   padding-left: 340px;
-}
-
-.product-card-price {
-  padding-left: 120px;
-  text-align: left;
 }
 
 .sorting {
@@ -345,21 +355,29 @@ padding-top: 5px;
   min-height: 100%;
   width: 1200px;
   margin: 0 auto;
+
 }
 
 .promo-block {
   background-image: url(../img/index-background.jpg);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.image-wrap {
+  margin: auto;
+
 }
 
 .logo-header {
+  width: 138px;
+  height: 70px;
   position: absolute;
+  margin: auto;
 
 }
 
 
-.product-card-1 {
-  display: flex;
-}
 
 
 .image-main {
@@ -368,30 +386,87 @@ padding-top: 5px;
 }
 
 .search {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   text-align:center;
+  width: 1200px;
+  height: 417px;
+  justify-content: center;
+  align-items: center;
 }
 
 .search-title {
-
-
+  width: 720px;
+  height: 50px;
+  padding-left: 240px;
+  padding-right:240px;
 }
 
 
 .search-name {
-
-
+  width: 720px;
+  height: 37px;
+  padding-left: 240px;
+  padding-right:240px;
 }
 
 .search-button {
+  background-color: #756257;
+  box-sizing: border-box;
+  width: 575px;
+  height: 60px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-left: 312px;
+  padding-right: 312px;
+
+
 
 
 }
 
 .subscribe {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   text-align:center;
+  background-image: url(../img/intexback-1.jpg);
+  width: 1200px;
+  height: 411px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
+
+.subscribe-title {
+  font-weight: 700;
+  padding-top: 94px;
+  color: #FFFFFF;
+}
+
+.subscribe-name {
+  text-align:center;
+  padding-left: 240px;
+  padding-right: 240px;
+  font-weight: 400;
+  color: #FFFFFF;
+
+}
+
+.newsletter-email {
+
+  padding-left: 200px;
+  width: 600px;
+  height: 60px;
+}
+
+.button .newsletter-button {
+  padding: 16px;
+
+}
+
+
 ul {
   margin: 0;
   padding: 0;
@@ -432,6 +507,7 @@ ul {
   padding: 0;
   width: 1200px;
   height: 408px;
+
 }
 
 .breadcrumbs {
@@ -446,6 +522,11 @@ ul {
   color: inherit;
 }
 
+
+.filter-form__col {
+  list-style-type: none;
+
+}
 .pagination-container {
   display: flex;
   padding: 16px;
@@ -483,4 +564,54 @@ ul {
 
 .pagination-show-more {
   margin-left: auto;
+}
+
+
+.product-card {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-between;
+  width: 1056px;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.product-card-1 {
+  display: flex;
+}
+
+
+.product-card-price {
+  padding-left: 120px;
+  text-align: left;
+}
+
+.product-card-title {
+  width: 211px;
+  height: 31px;
+  font-size: 24px;
+  vertical-align: top;
+  color: #000000;
+  font-weight: 700;
+}
+
+.product-card-button {
+  display:
+
+
+  width:152px;
+  height: 60px;
+  padding-top: 5px;
+  padding-right: -155px;
+  margin: 30px;
+  text-align: center;
+}
+
+.product-card-image {
+  margin-bottom: 30px;
+  width: 180px;
+  height: 120px;
 }

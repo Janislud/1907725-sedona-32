@@ -9,43 +9,39 @@
 
 <body>
 
-  <header class="page-container">
-    <div class="container">
-    <img class="logo-header" src="img/sedona-1.svg" width="138" height="70" alt="Logo SeDona »">
-    <nav class="navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item">
+  <div class="container">
+    <header>
+      <div class="image-wrap">
+        <img class="logo-header" src="img/sedona-1.svg" width="138" height="70" alt="Logo SeDona »">
+      </div>
+      <nav class="navigation">
+        <div class="navigation-list">
           <a class="navigation-link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation-item">
           <a class="navigation-link" href="#">О Седоне</a>
-        </li>
-        <li class="navigation-item">
           <a class="navigation-link" href="catalog.html">Гостиницы</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="navigation-list navigation-user">
-      <div class="navigation-item">
-        <a class="navigation-link" href="#">
-            <span class="visually-hidden">
-              Поиск
-            </span>
-        </a>
-      </div>
-      <div class="navigation-item">
-        <a class="navigation-link" href="#">
-            <span class="visually-hidden">
-              Избраное
-            </span>
-        </a>
-      </div>
-      <div class="navigation-item">
-        <a class="navigation-link" href="#">Вход</a>
-      </div>
-    </div>
-    </div>
-  </header>
+        </div>
+        <div class="navigation-list navigation-user">
+          <div class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                Поиск
+              </span>
+            </a>
+          </div>
+          <div class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">
+                Избраное
+              </span>
+            </a>
+          </div>
+          <div class="navigation-item">
+            <a class="navigation-link" href="#">Вход</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
 <section class="infrastructure-main">
   <div>
   <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -60,8 +56,9 @@
   </div>
 <form>
   <fieldset class="infrastructure">
-    <legend>Инфраструктура:</legend>
-    <ul>
+    <legend>Инфраструктура:
+    Тип жилья:</legend>
+    <ul class="checkbox">
       <li>
         <input type="checkbox" id="pool" name="infrastructure" value="Бассейн" checked>
         <label for="pool">Бассейн</label>
@@ -76,8 +73,7 @@
       </li>
     </ul>
 
-    <legend>Тип жилья::</legend>
-    <ul>
+    <ul class="checkbox">
       <li>
         <input type="radio" id="hotel" name="hotel-type" value="Бассейн" checked>
         <label for="hotel">Гостиница</label>
@@ -132,6 +128,7 @@
         <img class="product-card-image" src="img/hotel-1.jpg" width="180" height="120" alt="">
       </a>
       <div class="product-card-title">Amara Resort & Spa</div>
+      <div class="product-card-type">Гостиница</div>
       <div class="product-card-price">От 4000 ₽</div>
       <a href="#" class="product-card-button button">Подробнее</a>
       <a href="#" class="product-card-button button">В избранное</a>
@@ -143,6 +140,7 @@
       <img class="product-card-image" src="img/hotel-2.jpg" width="180" height="120" alt="">
     </a>
     <h3 class="product-card-title">Desert Quail Inn</h3>
+    <div class="product-card-type">Мотель</div>
     <b class="product-card-price">От 2000 ₽</b>
     <a href="#" class="product-card-button button">Подробнее</a>
     <a href="#" class="product-card-button button">В избранное</a>
@@ -154,6 +152,7 @@
       <img class="product-card-image" src="img/hotel-3.jpg" width="180" height="120" alt="">
     </a>
     <h3 class="product-card-title">Villas at Poco Diablo</h3>
+    <div class="product-card-type">Апартаменты</div>
     <b class="product-card-price">От 2000 ₽</b>
     <a href="#" class="product-card-button button">Подробнее</a>
     <a href="#" class="product-card-button button">В избранное</a>
@@ -165,13 +164,15 @@
       <img class="product-card-image" src="img/hotel-4.jpg" width="180" height="120" alt="">
     </a>
     <h3 class="product-card-title">Villas at Poco Diablo</h3>
+    <div class="product-card-type">Гостиница</div>
     <b class="product-card-price">От 3000 ₽</b>
     <a href="#" class="product-card-button button">Подробнее</a>
     <a href="#" class="product-card-button button">В избранное</a>
     <div>stars</div>
     <div>Рейтинг: 9,2</div>
+    <button class="btn btn--transparent" type="button">Загрузить еще</button>
   </div>
-  <button class="btn btn--transparent" type="button">Загрузить еще</button>
+
 
 
 
@@ -221,10 +222,10 @@
         <label class="visually-hidden" for="newsletter-email">Email</label>
         <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email"
                required>
+        <button class="button newsletter-button" type="submit">
+          <span>Подписаться</span>
+        </button>
       </p>
-      <button class="button newsletter-button" type="submit">
-        <span class="visually-hidden">Подписаться</span>
-      </button>
     </form>
   </section>
 </main>
@@ -253,7 +254,7 @@
       <p class="about-text">Сделано в <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
       </p></div>
   </footer>
-</div>
+
 
 
 </body>
